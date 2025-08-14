@@ -7,7 +7,7 @@
     <!-- Página Principal -->
     <url>
         <loc>https://www.patagoniawood.cl/</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2025-08-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,7 +15,7 @@
     <!-- Página de Puertas -->
     <url>
         <loc>https://www.patagoniawood.cl/puertas</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2025-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -23,7 +23,7 @@
     <!-- Página de Muebles -->
     <url>
         <loc>https://www.patagoniawood.cl/muebles</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2025-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -31,7 +31,7 @@
     <!-- Página de Molduras y Otros -->
     <url>
         <loc>https://www.patagoniawood.cl/otros-productos</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2025-08-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
