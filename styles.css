@@ -81,7 +81,7 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 120px;
     width: auto;
 }
 
@@ -457,8 +457,10 @@ body {
 }
 
 .footer-logo .logo {
-    height: 40px;
-    filter: brightness(0) invert(1);
+    height: 130px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 15px;
 }
 
 .footer-text {
@@ -605,6 +607,74 @@ html {
 .value-item,
 .contact-item {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Contact Links Styles */
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    transition: var(--transition);
+}
+
+.contact-link i {
+    color: var(--primary-green);
+    font-size: var(--font-size-lg);
+    width: 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-link a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    transform: translateX(5px);
+}
+
+.contact-link:hover i {
+    color: var(--secondary-green);
+    transform: scale(1.1);
+}
+
+.contact-link:hover a {
+    color: var(--primary-green);
+}
+
+/* Responsive adjustments for contact links */
+@media (max-width: 768px) {
+    .contact-link {
+        gap: var(--spacing-xs);
+    }
+    
+    .contact-link i {
+        font-size: var(--font-size-base);
+        width: 18px;
+    }
+    
+    .contact-link a {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-link {
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .contact-link i {
+        font-size: var(--font-size-sm);
+        width: 16px;
+    }
+    
+    .contact-link a {
+        font-size: var(--font-size-xs);
+    }
 }
 
 /* Utilidades */
