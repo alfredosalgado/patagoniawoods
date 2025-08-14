@@ -17,7 +17,7 @@
     --dark-text: #2c2c2c;
     --light-text: #666666;
     --accent-gold: #d4af37;
-    
+
     /* Tipografía */
     --font-family: 'Inter', sans-serif;
     --font-size-xs: 0.75rem;
@@ -28,7 +28,7 @@
     --font-size-2xl: 1.5rem;
     --font-size-3xl: 1.875rem;
     --font-size-4xl: 2.25rem;
-    
+
     /* Espaciado */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -36,12 +36,12 @@
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-2xl: 4rem;
-    
+
     /* Sombras */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    
+
     /* Transiciones */
     --transition: all 0.3s ease;
 }
@@ -481,58 +481,58 @@ body {
         transition: var(--transition);
         box-shadow: var(--shadow-lg);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .nav-list {
         flex-direction: column;
         padding: var(--spacing-xl);
         gap: var(--spacing-lg);
     }
-    
+
     .nav-toggle {
         display: flex;
     }
-    
+
     .nav-toggle.active .nav-toggle-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     .nav-toggle.active .nav-toggle-line:nth-child(2) {
         opacity: 0;
     }
-    
+
     .nav-toggle.active .nav-toggle-line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
-    
+
     .hero {
         min-height: 70vh;
         padding-top: 70px;
         background-attachment: scroll;
     }
-    
+
     .hero-content {
         max-width: 90%;
         padding: var(--spacing-xl) var(--spacing-md);
     }
-    
+
     .hero-title {
         font-size: var(--font-size-3xl);
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: var(--spacing-md);
@@ -545,40 +545,40 @@ body {
     .container {
         padding: 0 var(--spacing-xs);
     }
-    
+
     .hero-content {
         padding: var(--spacing-lg) var(--spacing-sm);
     }
-    
+
     .hero-title {
         font-size: var(--font-size-2xl);
     }
-    
+
     .hero-subtitle {
         font-size: var(--font-size-base);
     }
-    
+
     .section-title {
         font-size: var(--font-size-2xl);
     }
-    
+
     .section-description {
         font-size: var(--font-size-base);
     }
-    
+
     .products-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
+
     .product-card {
         padding: var(--spacing-lg);
     }
-    
+
     .cta-title {
         font-size: var(--font-size-2xl);
     }
-    
+
     .btn-large {
         padding: var(--spacing-sm) var(--spacing-lg);
         font-size: var(--font-size-base);
@@ -596,6 +596,7 @@ html {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -651,12 +652,12 @@ html {
     .contact-link {
         gap: var(--spacing-xs);
     }
-    
+
     .contact-link i {
         font-size: var(--font-size-base);
         width: 18px;
     }
-    
+
     .contact-link a {
         font-size: var(--font-size-sm);
     }
@@ -666,12 +667,12 @@ html {
     .contact-link {
         margin-bottom: var(--spacing-xs);
     }
-    
+
     .contact-link i {
         font-size: var(--font-size-sm);
         width: 16px;
     }
-    
+
     .contact-link a {
         font-size: var(--font-size-xs);
     }
@@ -682,12 +683,30 @@ html {
     text-align: center;
 }
 
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: var(--spacing-xs); }
-.mb-2 { margin-bottom: var(--spacing-sm); }
-.mb-3 { margin-bottom: var(--spacing-md); }
-.mb-4 { margin-bottom: var(--spacing-lg); }
-.mb-5 { margin-bottom: var(--spacing-xl); }
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.mb-2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.mb-3 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-4 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mb-5 {
+    margin-bottom: var(--spacing-xl);
+}
+
 /*
  Product Pages Styles */
 
@@ -695,7 +714,7 @@ html {
 .page-header {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
     color: var(--white);
-    padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+    padding: calc(200px + var(--spacing-xl)) 0 var(--spacing-xl);
     text-align: center;
 }
 
@@ -845,26 +864,26 @@ html {
 /* Responsive Design for Product Pages */
 @media (max-width: 768px) {
     .page-header {
-        padding: calc(70px + var(--spacing-lg)) 0 var(--spacing-lg);
+        padding: calc(180px + var(--spacing-lg)) 0 var(--spacing-lg);
     }
-    
+
     .page-title {
         font-size: var(--font-size-2xl);
     }
-    
+
     .page-subtitle {
         font-size: var(--font-size-base);
     }
-    
+
     .product-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
+
     .product-image {
         height: 200px;
     }
-    
+
     .category-title {
         font-size: var(--font-size-xl);
     }
@@ -874,20 +893,22 @@ html {
     .product-info {
         padding: var(--spacing-md);
     }
-    
+
     .product-name {
         font-size: var(--font-size-lg);
     }
-    
+
     .product-sizes {
         gap: 4px;
     }
-    
+
     .size-badge {
         padding: 2px 6px;
         font-size: 10px;
     }
-}/* Furnitu
+}
+
+/* Furnitu
 re Specifications Styles */
 .product-specs {
     margin-top: var(--spacing-md);
@@ -924,7 +945,7 @@ re Specifications Styles */
     .spec-item {
         padding: 6px 0;
     }
-    
+
     .spec-label,
     .spec-value {
         font-size: var(--font-size-xs);
@@ -935,12 +956,14 @@ re Specifications Styles */
     .product-specs {
         margin-top: var(--spacing-sm);
     }
-    
+
     .spec-item {
         margin-bottom: 6px;
         padding: 4px 0;
     }
-}/* Gal
+}
+
+/* Gal
 lery Styles for Other Products */
 .gallery-grid {
     display: grid;
@@ -1006,11 +1029,11 @@ lery Styles for Other Products */
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: var(--spacing-sm);
     }
-    
+
     .stair-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    
+
     .category-description {
         font-size: var(--font-size-base);
         padding: var(--spacing-sm);
@@ -1023,15 +1046,15 @@ lery Styles for Other Products */
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-xs);
     }
-    
+
     .stair-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .gallery-item {
         border-radius: 8px;
     }
-    
+
     .category-description {
         font-size: var(--font-size-sm);
         margin-bottom: var(--spacing-md);
@@ -1045,9 +1068,9 @@ lery Styles for Other Products */
 
 .gallery-item:active {
     transform: scale(0.98);
-}/
-* Dropdown Menu Styles */
-.dropdown {
+}
+
+/ * Dropdown Menu Styles */ .dropdown {
     position: relative;
 }
 
@@ -1118,21 +1141,23 @@ lery Styles for Other Products */
         overflow: hidden;
         transition: max-height 0.3s ease;
     }
-    
+
     .dropdown:hover .dropdown-menu,
     .dropdown.active .dropdown-menu {
         max-height: 200px;
     }
-    
+
     .dropdown-link {
         padding: var(--spacing-sm) var(--spacing-lg);
         border-bottom: 1px solid rgba(139, 111, 71, 0.2);
     }
-    
+
     .dropdown-link:last-child {
         border-bottom: none;
     }
-}/* Produ
+}
+
+/* Produ
 ct Access Section */
 .product-access {
     padding: var(--spacing-2xl) 0;
@@ -1217,23 +1242,23 @@ ct Access Section */
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
+
     .product-access-image {
         height: 200px;
     }
-    
+
     .product-access-content {
         padding: var(--spacing-lg);
     }
-    
+
     .product-access-title {
         font-size: var(--font-size-lg);
     }
-    
+
     .product-access-description {
         font-size: var(--font-size-sm);
     }
-    
+
     .product-access-cta {
         font-size: var(--font-size-base);
     }
@@ -1244,11 +1269,11 @@ ct Access Section */
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
     }
-    
+
     .product-access-image {
         height: 180px;
     }
-    
+
     .product-access-content {
         padding: var(--spacing-md);
     }
